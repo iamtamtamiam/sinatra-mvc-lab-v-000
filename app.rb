@@ -7,7 +7,7 @@ class App < Sinatra::Base
   end 
   
   post '/piglatinize' do
-    
+    word_from_user = params[:]
   end 
   
 end
