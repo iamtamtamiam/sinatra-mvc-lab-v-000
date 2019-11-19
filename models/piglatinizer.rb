@@ -2,7 +2,7 @@ class PigLatinizer
   
   attr_accessor :user_input_text, :words, :piglatinized
   
-  def piglatinizer(user_input_text)
+  def piglatinize(user_input_text)
     
     @user_input_text = user_input_text
     @words = user_input_text.split(" ")
