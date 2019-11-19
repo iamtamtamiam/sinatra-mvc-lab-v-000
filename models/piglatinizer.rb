@@ -9,7 +9,9 @@ class PigLatinizer
     result = []
     
     @words.each do |word|
-      if word.start_with?()
+      if word.start_with?(/[AEIOUaeiou]/)
+        result << "#{word}way"
+      elsif word.start_with?
       
     end 
     
