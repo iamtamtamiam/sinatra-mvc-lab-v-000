@@ -10,17 +10,17 @@ class PigLatinizer
     
     @words.each do |word|
       if word.start_with?(/[AEIOUaeiou]/)
-        piglatin << "#{word}way"
+        result << "#{word}way"
       elsif word.start_with?(/[sS][pt]r{1}/)
-        piglatin << "#{word[3..-1]}#{word[0..2]}ay"
+        result << "#{word[3..-1]}#{word[0..2]}ay"
       elsif word.start_with?(/\w[rhltk]/)
-        piglatin << "#{word[2..-1]}#{word[0..1]}ay"
+        result << "#{word[2..-1]}#{word[0..1]}ay"
       else
-        piglatin << "#{word[1..-1]}#{word[0]}ay"
+        result << "#{word[1..-1]}#{word[0]}ay"
       end
     end
 
-    @piglatinized = piglatin.join(" ")
+    @piglatinized = result.join(" ")
       
   end 
   
